@@ -1,0 +1,318 @@
+// Define insect data (replace with actual data)
+const insects = [
+  {
+    name: "Ladybug",
+    description:
+      "The ladybug, also known as ladybird beetle, is a beneficial insect that helps control garden pests like aphids."
+  },
+  {
+    name: "Butterfly",
+    description:
+      "Butterflies are colorful insects with delicate wings. They are important pollinators in many ecosystems."
+  },
+  {
+    name: "Dragonfly",
+    description:
+      "Dragonflies are agile predators that feed on mosquitoes and other small insects. They have long, slender bodies and transparent wings."
+  },
+  {
+    name: "Ant",
+    description:
+      "Ants are social insects that live in colonies. They play important roles in ecosystems, such as seed dispersal and soil aeration."
+  },
+  {
+    name: "Bee",
+    description:
+      "Bees are important pollinators that help plants reproduce. They collect nectar and pollen from flowers to feed their colony."
+  },
+  {
+    name: "Grasshopper",
+    description:
+      "Grasshoppers are herbivorous insects known for their powerful hind legs, which allow them to jump long distances."
+  },
+  {
+    name: "Mosquito",
+    description:
+      "Mosquitoes are small, flying insects known for their itchy bites. Only female mosquitoes bite humans to feed on blood."
+  },
+  {
+    name: "Caterpillar",
+    description:
+      "Caterpillars are the larval stage of butterflies and moths. They feed on leaves and undergo metamorphosis to become adults."
+  },
+  {
+  name: "Fire Ant",
+  description: "Fire ants are aggressive insects known for their painful stings. They build large colonies and are considered invasive pests in many regions."
+},
+  {
+  name: "Yellow Jacket Wasp",
+  description: "Yellow jacket wasps are small, aggressive wasps with yellow and black markings. They build underground nests and are known for their painful stings."
+},
+  {
+  name: "Tiger Swallowtail Butterfly",
+  description: "Tiger swallowtail butterflies are large butterflies with distinctive yellow and black markings. They are commonly found in North America."
+},
+  {
+    name: "Spider",
+    image: "spider.jpg",
+    description:
+      "Spiders are arachnids, not insects, but they play important roles in ecosystems by controlling insect populations through predation."
+  },
+  {
+    name: "Beetle",
+    image: "beetle.jpg",
+    description:
+      "Beetles are a diverse group of insects known for their hard outer wings called elytra. They have chewing mouthparts and undergo complete metamorphosis."
+  },
+  {
+    name: "Fly",
+    image: "fly.jpg",
+    description:
+      "Flies are small, flying insects with a single pair of wings. They are often attracted to decaying organic matter and can be vectors for diseases."
+  },
+  {
+    name: "Moth",
+    image: "moth.jpg",
+    description:
+      "Moths are nocturnal insects closely related to butterflies. They have feathery antennae and cryptic coloration to camouflage themselves."
+  },
+  {
+    name: "Firefly",
+    image: "firefly.jpg",
+    description:
+      "Fireflies, also known as lightning bugs, are beetles known for their bioluminescent glow. They use light signals to communicate with each other."
+  },
+  {
+    name: "Wasp",
+    image: "wasp.jpg",
+    description:
+      "Wasps are flying insects with slender bodies and stingers. They are predators and can be beneficial for controlling pest populations."
+  },
+  {
+    name: "Centipede",
+    image: "centipede.jpg",
+    description:
+      "Centipedes are arthropods with many legs and a pair of venomous claws. They are nocturnal predators that feed on small insects and worms."
+  },
+  {
+    name: "Praying Mantis",
+    image: "praying_mantis.jpg",
+    description:
+      "Praying mantises are carnivorous insects known for their distinctive posture and predatory behavior. They ambush and catch prey with their forelegs."
+  },
+  {
+    name: "Earwig",
+    image: "earwig.jpg",
+    description:
+      "Earwigs are small insects with pincers on their abdomen. Despite their name, they do not crawl into human ears. They are omnivorous scavengers."
+  },
+  {
+    name: "Bumblebee",
+    image: "bumblebee.jpg",
+    description:
+      "Bumblebees are large, fuzzy bees known for their loud buzzing sound. They are important pollinators for many plants, including crops."
+  },
+  {
+    name: "Cicada",
+    image: "cicada.jpg",
+    description:
+      "Cicadas are large, noisy insects known for their buzzing calls. They spend most of their lives underground as nymphs and emerge as adults to mate."
+  },
+  {
+    name: "Cricket",
+    image: "cricket.jpg",
+    description:
+      "Crickets are nocturnal insects known for their chirping songs. Only male crickets produce sounds by rubbing their wings together to attract females."
+  },
+  {
+    name: "Giant Water Bug",
+    image: "giant_water_bug.jpg",
+    description:
+      "Giant water bugs are aquatic insects known for their predatory behavior. They are voracious hunters that capture prey with their powerful front legs."
+  },
+  {
+    name: "Green Lacewing",
+    image: "green_lacewing.jpg",
+    description:
+      "Green lacewings are delicate insects with lacy wings. They are beneficial predators that feed on aphids and other pests in gardens."
+  },
+  {
+    name: "Stag Beetle",
+    image: "stag_beetle.jpg",
+    description:
+      "Stag beetles are large beetles known for their impressive mandibles, which resemble the antlers of a stag. They are harmless to humans and feed on decaying wood."
+  },
+  {
+    name: "Atlas Moth",
+    image: "atlas_moth.jpg",
+    description:
+      "Atlas moths are one of the largest moth species in the world. They have beautiful patterns on their wings and are nocturnal creatures."
+  },
+  {
+    name: "Violet Carpenter Bee",
+    image: "violet_carpenter_bee.jpg",
+    description:
+      "Violet carpenter bees are large, solitary bees with a metallic sheen. They are important pollinators in tropical regions."
+  }
+  // Add more insect data as needed
+];
+
+// Fake insects
+const fakeInsects = [
+  {
+    name: "Spiderman Spider",
+    image: "spiderman_spider.jpg",
+    description:
+      "Spiderman spiders are fictional arachnids inspired by the famous comic book character. They are known for their agility and web-slinging abilities."
+  },
+  {
+    name: "Antman Ant",
+    image: "antman_ant.jpg",
+    description:
+      "Antman ants are imaginary insects inspired by the superhero Ant-Man. They possess the ability to shrink to a tiny size while retaining their strength."
+  },
+  {
+    name: "Moonstone Earwig",
+    image: "moonstone_earwig.jpg",
+    description:
+      "Moonstone earwigs are small insects with moonstone-like shells. They scavenge for food in dark and damp environments."
+  },
+  {
+    name: "Obsidian Bumblebee",
+    image: "obsidian_bumblebee.jpg",
+    description:
+      "Obsidian bumblebees are large, fuzzy insects with glossy black bodies. They are important pollinators in volcanic regions."
+  },
+  {
+        name: "Golden Ant",
+        image: "golden_ant.jpg",
+        description: "Golden ants are small insects with metallic gold-colored exoskeletons. They are highly prized by collectors for their unique appearance."
+      },
+  
+    {
+        name: "Echo Beetle", image: "echo_beetle.jpg", description: "Echo beetles are nocturnal insects with iridescent bodies. They emit high-pitched chirps that echo through the night.""
+      }, 
+  {
+        name: "Whirlwind Wasp", image: "whirlwind_wasp.jpg", description: "Whirlwind wasps are swift insects known for their dizzying flight patterns. They zip through the air with remarkable agility, making them difficult to catch.""
+      },   
+   {
+        name: "Zapbug", image: "zapbug.jpg", description: "Zapbugs are curious creatures that resemble insects but are actually tiny robots designed to zap away electronic pests."""
+      },  
+  
+  {
+    name: "Coral Cicada",
+    image: "coral_cicada.jpg",
+    description:
+      "Coral cicadas are large, noisy insects with coral-colored wings. They emerge in swarms during the rainy season in tropical climates."
+  },
+  {
+    name: "Marble Cricket",
+    image: "marble_cricket.jpg",
+    description:
+      "Marble crickets are nocturnal insects with marble-patterned exoskeletons. They chirp softly in the night, signaling the arrival of rain."
+  },
+  {
+    name: "Sapphire Water Bug",
+    image: "sapphire_water_bug.jpg",
+    description:
+      "Sapphire water bugs are aquatic insects with shimmering blue bodies. They glide gracefully on the surface of ponds and lakes."
+  }
+];
+
+let score = 0;
+let timer;
+
+// Start game function
+function startGame() {
+  const selectedDuration = parseInt(
+    document.getElementById("timerDuration").value
+  );
+  startTimer(selectedDuration);
+
+  document.getElementById("startButton").style.display = "none";
+  document.getElementById("gameContainer").style.display = "block";
+  displayInsects();
+}
+
+// Display insects in the game environment
+function displayInsects() {
+  const gameContainer = document.getElementById("gameContainer");
+  gameContainer.innerHTML = "";
+
+  // Concatenate real and fake insects
+  const allInsects = insects.concat(fakeInsects);
+
+  allInsects.forEach((insect) => {
+    const insectElement = document.createElement("div");
+    insectElement.classList.add("insect");
+    insectElement.innerHTML = `
+            <alt="${insect.name}">
+            <p>${insect.name}</p>
+        `;
+    insectElement.addEventListener("click", () => {
+      captureInsect(insect);
+    });
+    gameContainer.appendChild(insectElement);
+  });
+}
+
+// Capture an insect and display its information
+function captureInsect(insect) {
+  if (isRealInsect(insect)) {
+    score++;
+  } else {
+    score--;
+  }
+  document.getElementById("score").textContent = `Score: ${score}`;
+  displayInsectInfo(insect);
+}
+
+// Function to check if an insect is real or fake
+function isRealInsect(insect) {
+  return insects.some((realInsect) => realInsect.name === insect.name);
+}
+
+// Display insect information
+function displayInsectInfo(insect) {
+  const infoContainer = document.getElementById("infoContainer");
+  infoContainer.innerHTML = `
+        
+        <p>${insect.description}</p>
+    `;
+}
+
+// Start the timer
+function startTimer(duration) {
+  let timeRemaining = duration;
+  const timerDisplay = document.getElementById("timer");
+
+  timer = setInterval(() => {
+    if (timeRemaining > 0) {
+      timerDisplay.textContent = `Time: ${timeRemaining} seconds`;
+      timeRemaining--;
+    } else {
+      clearInterval(timer);
+      endGame();
+    }
+  }, 1000);
+}
+
+// End the game
+function endGame() {
+  alert(`Game Over! Your final score is ${score}.`);
+  resetGame();
+}
+
+// Reset the game
+function resetGame() {
+  score = 0;
+  clearInterval(timer);
+  document.getElementById("startButton").style.display = "block";
+  document.getElementById("gameContainer").style.display = "none";
+  document.getElementById("timer").textContent = "Time: 0 seconds";
+  document.getElementById("score").textContent = "Score: 0";
+  document.getElementById("infoContainer").innerHTML = "";
+}
+
+// Event listener for start button
+document.getElementById("startButton").addEventListener("click", startGame);
